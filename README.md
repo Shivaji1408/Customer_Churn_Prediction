@@ -1,89 +1,106 @@
-📊 Customer Churn Prediction App
+# 📊 Customer Churn Prediction App
+
 This repository contains a Streamlit application that predicts whether a customer is likely to churn based on various customer details. The prediction model is a Logistic Regression trained on a customer dataset.
 
-📁 Project Structure
-app.py: The main Streamlit application script.
+## 📁 Project Structure
 
-churn_model.pkl: The trained Logistic Regression model saved using pickle.
+* `app.py`: The main Streamlit application script.
 
-scaler.pkl: The StandardScaler object used for feature scaling, also saved using pickle.
+* `churn_model.pkl`: The trained Logistic Regression model saved using `pickle`.
 
-columns.pkl: A list of column names in the order expected by the model, saved using pickle.
+* `scaler.pkl`: The `StandardScaler` object used for feature scaling, also saved using `pickle`.
 
-customerChurn.csv: The dataset used for training the model.
+* `columns.pkl`: A list of column names in the order expected by the model, saved using `pickle`.
 
-Churn_Prediction.ipynb: A Jupyter Notebook detailing the data preprocessing, model training, and evaluation steps.
+* `customerChurn.csv`: The dataset used for training the model.
 
-requirements.txt: A list of Python dependencies required to run the application.
+* `Churn_Prediction.ipynb`: A Jupyter Notebook detailing the data preprocessing, model training, and evaluation steps.
 
-🚀 How to Run the Application
+* `requirements.txt`: A list of Python dependencies required to run the application.
+
+## 🚀 How to Run the Application
+
 Follow these steps to get the application up and running on your local machine.
 
-Prerequisites
+### Prerequisites
+
 Before you begin, ensure you have the following installed:
 
-Python 3.8+
+* **Python 3.8+**
 
-pip (Python package installer)
+* **pip** (Python package installer)
 
-1. Clone the Repository
+### 1. Clone the Repository
+
 First, clone this repository to your local machine using Git:
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+```bash
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
 cd YOUR_REPOSITORY_NAME
+```
 
-Note: Replace YOUR_USERNAME and YOUR_REPOSITORY_NAME with your actual GitHub username and repository name.
+**Note:** Replace `YOUR_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub username and repository name.
 
-2. Create a Virtual Environment (Recommended)
+### 2. Create a Virtual Environment (Recommended)
+
 It's highly recommended to create a virtual environment to manage dependencies:
 
-python -m venv venv
+### 2. Create a Virtual Environment
 
-3. Activate the Virtual Environment
-On Windows:
+```bash
+# Create environment with Python 3.10
+conda create --name plant_env python=3.10
 
-.\venv\Scripts\activate
+# Activate the environment
+conda activate plant_env
+```
 
-On macOS/Linux:
+### 4. Install Dependencies
 
-source venv/bin/activate
+Once your environment is active, install the required Python packages using `pip`:
 
-4. Install Dependencies
-Once your virtual environment is active, install the required Python packages using pip:
-
+```bash
 pip install -r requirements.txt
+```
 
-5. Run the Streamlit Application
+### 5. Run the Streamlit Application
+
 After installing all dependencies, you can run the Streamlit application:
 
+```bash
 streamlit run app.py
+```
 
-This command will open the application in your default web browser. If it doesn't open automatically, you can access it by navigating to the local URL displayed in your terminal (usually http://localhost:8501).
+This command will open the application in your default web browser. If it doesn't open automatically, you can access it by navigating to the local URL displayed in your terminal (usually `http://localhost:8501`).
 
-📈 Usage
+## 📈 Usage
+
 On the Streamlit application page, you will see various input fields corresponding to customer details. Fill in the information for the customer you want to predict.
 
 Click the "Predict Churn" button, and the application will display whether the customer is likely to churn or stay.
 
-📊 Model Details
-The Churn_Prediction.ipynb notebook provides a detailed walkthrough of the model development process, including:
+## 📊 Model Details
 
-Data loading and initial exploration.
+The `Churn_Prediction.ipynb` notebook provides a detailed walkthrough of the model development process, including:
 
-Handling missing values and data type conversions.
+* Data loading and initial exploration.
 
-One-hot encoding of categorical features.
+* Handling missing values and data type conversions.
 
-Feature scaling using StandardScaler.
+* One-hot encoding of categorical features.
 
-Splitting data into training and testing sets.
+* Feature scaling using `StandardScaler`.
 
-Training a Logistic Regression model.
+* Splitting data into training and testing sets.
 
-Evaluating the model's performance (accuracy, classification report).
+* Training a Logistic Regression model.
 
-🤝 Contributing
+* Evaluating the model's performance (accuracy, classification report).
+
+## 🤝 Contributing
+
 Feel free to fork this repository, make improvements, and submit pull requests.
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📄 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
