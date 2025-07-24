@@ -2,6 +2,8 @@
 
 This repository contains a Streamlit application that predicts whether a customer is likely to churn based on various customer details. The prediction model is a Logistic Regression trained on a customer dataset.
 
+And You can check the working model on this site : https://customerchurnprediction-efddzjnnwjg2xl5pedge9l.streamlit.app/
+
 ## 📁 Project Structure
 
 * `app.py`: The main Streamlit application script.
