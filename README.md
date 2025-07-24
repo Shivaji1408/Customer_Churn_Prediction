@@ -32,11 +32,9 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the Repository
 
-First, clone this repository to your local machine using Git:
-
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-cd YOUR_REPOSITORY_NAME
+git clone https://github.com/Shivaji1408/Customer_Churn_Prediction.git
+cd Customer_Churn_Predictor
 ```
 
 **Note:** Replace `YOUR_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub username and repository name.
